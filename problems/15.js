@@ -11,7 +11,14 @@
  * @example 15 -> [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]
 */
 function problem(number) {
-    return null;
+    
+    let fizzbuzzArray = [];
+    for (let i = 1; i < number + 1; i++)
+    {
+        fizzbuzzArray.push((( ((i % 3 == 0) ? "Fizz" : "") + ((i % 5 == 0) ? "Buzz" : "")) || i));
+    }
+
+    return fizzbuzzArray;
 }
 
 const tests = [

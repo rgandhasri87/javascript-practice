@@ -7,7 +7,8 @@
  * @example [{name: "Chase", grade: 89}, {name: "Raman", grade: 92}, {name: "Peter", grade: 100}] -> ["Peter", "Raman"]
 */
 function problem(students) {
-    return null;
+    students.sort((s1, s2) => s2 - s1).reverse();
+    return students.filter((student) => (student["grade"] > 90)).map((student) => student["name"]);
 }
 
 const tests = [

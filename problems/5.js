@@ -7,7 +7,7 @@
  * @example [{name: "Chase", grade: 89}, {name: "Raman", grade: 92}] -> [{name: "Raman", grade: 92}, {name: "Chase", grade: 89}]
 */
 function problem(students) {
-    return null;
+    return students.sort((s1, s2) => s2["grade"] - s1["grade"]);
 }
 
 const tests = [
